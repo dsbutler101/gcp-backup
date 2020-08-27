@@ -5,10 +5,6 @@ provider "google" {
   zone    = var.zone
 }
 
-provider "archive" {
-  version = "~> 1.3.0"
-}
-
 terraform {
   backend "gcs" {
     prefix = "backup" 
